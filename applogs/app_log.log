@@ -1,0 +1,15 @@
+[INFO ] 2018-03-23 18:34:51.392 [main] SpringDataJpaAuditing1ApplicationTests - Starting SpringDataJpaAuditing1ApplicationTests on LENOVO with PID 4072 (started by SHUBHAM in E:\Boot\JAPI)
+[DEBUG] 2018-03-23 18:34:51.404 [main] SpringDataJpaAuditing1ApplicationTests - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[INFO ] 2018-03-23 18:34:51.404 [main] SpringDataJpaAuditing1ApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2018-03-23 18:36:36.969 [restartedMain] ApiApplication - Starting ApiApplication on LENOVO with PID 1008 (E:\Boot\JAPI\target\classes started by SHUBHAM in E:\Boot\JAPI)
+[DEBUG] 2018-03-23 18:36:36.975 [restartedMain] ApiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[INFO ] 2018-03-23 18:36:36.975 [restartedMain] ApiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-03-23 18:38:54.074 [restartedMain] ApiApplication - Starting ApiApplication on LENOVO with PID 7004 (E:\Boot\JAPI\target\classes started by SHUBHAM in E:\Boot\JAPI)
+[DEBUG] 2018-03-23 18:38:54.078 [restartedMain] ApiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[INFO ] 2018-03-23 18:38:54.078 [restartedMain] ApiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-03-23 18:40:46.423 [restartedMain] ApiApplication - Starting ApiApplication on LENOVO with PID 8088 (E:\Boot\JAPI\target\classes started by SHUBHAM in E:\Boot\JAPI)
+[DEBUG] 2018-03-23 18:40:46.428 [restartedMain] ApiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[INFO ] 2018-03-23 18:40:46.429 [restartedMain] ApiApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2018-04-18 18:53:08.164 [restartedMain] ApiApplication - Starting ApiApplication on LENOVO with PID 7824 (E:\Boot\JAPI\target\classes started by SHUBHAM in E:\Boot\JAPI)
+[DEBUG] 2018-04-18 18:53:08.226 [restartedMain] ApiApplication - Running with Spring Boot v1.5.10.RELEASE, Spring v4.3.14.RELEASE
+[INFO ] 2018-04-18 18:53:08.226 [restartedMain] ApiApplication - No active profile set, falling back to default profiles: default

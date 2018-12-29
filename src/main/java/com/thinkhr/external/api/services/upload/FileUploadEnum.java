@@ -1,0 +1,134 @@
+package com.thinkhr.external.api.services.upload;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Enum to keep mapping between database columns and file columns for upload
+ * 
+ * @author Surabhi Bhawsar
+ * @since 2017-11-26
+ *
+ */
+public enum FileUploadEnum {
+
+    COMPANY("company"),
+    LOCATION("location"),
+    USER("user"),
+    //COMPANY TABLE COLUMNS/HEADERS
+    COMPANY_NAME("client_name", "CLIENT_NAME", "company"),
+    COMPANY_DISPLAY_NAME("t1_display_name", "DISPLAY_NAME", "company"),
+    COMPANY_PHONE("client_phone", "PHONE", "company"),
+    COMPANY_INDUSTRY("industry", "INDUSTRY", "company"),
+    COMPANY_SIZE("companysize", "COMPANY_SIZE", "company"),
+    COMPANY_PRODUCER("producer", "PRODUCER", "company"),
+    COMPANY_CONFIGURATION("t1_configuration_id", "CONFIGURATION_NAME", "company"),
+
+    //USER TABLE COLUMNS/HEADERS
+    USER_FIRST_NAME("first_name", "FIRST_NAME", "user"),
+    USER_LAST_NAME("last_name", "LAST_NAME", "user"),
+    USER_USER_NAME("username", "USER_NAME", "user"),
+    USER_EMAIL("email", "EMAIL", "user"),
+    USER_CLIENT_NAME("client_name", "CLIENT_NAME", "user"),
+    USER_PHONE("phone", "PHONE", "user"),
+    USER_ROLE("t1_roleId", "ROLE", "user"),
+   // USER_BUSINESS_ID("phone", "BUSINESS_ID", "user"),
+
+    //LOCATION COLUMN/HEADERS 
+    LOCATION_ADDRESS("address", "ADDRESS", "location"),
+    LOCATION_ADDRESS2("address2", "ADDRESS2", "location"),
+    LOCATION_CITY("city", "CITY", "location"),
+    LOCATION_STATE("state", "STATE", "location"),
+    LOCATION_ZIP("zip", "ZIP", "location");
+
+    private String header;
+    private String column;
+    private String resource;
+
+    /**
+     * Constructor
+     * 
+     * @param resource
+     */
+    private FileUploadEnum(String resource) {
+        this.resource = resource;
+    }
+
+    /**
+     * Constructor 
+     * 
+     * @param column
+     * @param headerInFile
+     * @param resource
+     */
+    private FileUploadEnum(String column, String headerInFile, String resource) {
+        this.header = headerInFile;
+        this.column = column;
+        this.resource = resource;
+    }
+
+    /**
+     * @return the header
+     */
+    public String getHeader() {
+        return header;
+    }
+
+    /**
+     * @param header the header to set
+     */
+    public void setHeader(String header) {
+        this.header = header;
+    }
+
+    /**
+     * @return the column
+     */
+    public String getColumn() {
+        return column;
+    }
+
+    /**
+     * @param column the column to set
+     */
+    public void setColumn(String column) {
+        this.column = column;
+    }
+
+    /**
+     * @return the resource
+     */
+    public String getResource() {
+        return resource;
+    }
+
+    /**
+     * @param resource the resource to set
+     */
+    public void setResource(String resource) {
+        this.resource = resource;
+    }
+
+
+    /**
+     * Construct map
+     * 
+     * @return
+     */
+    public static Map<String, String> prepareColumnHeaderMap(String resource) {
+        Map<String, String> columnToHeaderMap = new HashMap<String, String>();
+        for (FileUploadEnum value : FileUploadEnum.values()) {
+            if (value.getResource().equalsIgnoreCase(resource)) {
+                if (value.getColumn() == null) {
+                    continue; //As it is not a valid entry for map.
+                }
+                columnToHeaderMap.put(value.getColumn(),  value.getHeader());
+            }
+        }
+        return columnToHeaderMap;
+    }
+
+
+
+
+}
